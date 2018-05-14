@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# This pre-commit hook will keep the indexes up-to-date.
+#
+# To install it, from the repo root, say `cp -i tools/pre-commit .git/hooks/`.
+
+./tools/update_indexes.js
+git add server/index.js client/src/shared/index.js

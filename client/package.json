@@ -4,14 +4,29 @@
   "private": true,
   "dependencies": {
     "construction-designer-core": "git+ssh://git@github.com/RoleModel/construction-designer-core.git#v1.6.1",
+    "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-scripts": "1.1.4"
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4",
+    "source-map-loader": "^0.2.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "./start_dev.sh",
+    "test": "CI=true react-scripts test --env=jsdom",
+    "test_jest_debug": "CI=1 node debug node_modules/react-scripts/scripts/test.js --runInBand --env=jsdom",
+    "test_jest_watch": "react-scripts test --env=jsdom",
+    "postinstall": "if [ -z \"$npm_config_production\" ]; then cp ./createJestConfig.js node_modules/react-scripts/scripts/utils/; fi",
+    "eject": "react-scripts eject",
+    "build": "./create_build.sh"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest-enzyme": "^6.0.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "uglifyjs-webpack-plugin": "^1.2.5"
   }
 }
