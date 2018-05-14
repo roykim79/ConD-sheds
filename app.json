@@ -1,0 +1,27 @@
+{
+  "name": "Sayfa",
+  "scripts": {},
+  "env": {
+    "CUSTOM_SSH_KEY": {
+      "required": true
+    },
+    "CUSTOM_SSH_KEY_HOSTS": {
+      "required": true,
+      "value": "github.com"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "https://github.com/simon0191/custom-ssh-key-buildpack"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
