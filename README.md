@@ -1,9 +1,9 @@
 # Overview
 ## Name and aliases
-The project is named "Sayfa".
+The project is named "ConD_New_App_Template".
 
 ## Purpose
-TODO: fill in this section
+To exist as a Construction Designer Application template to make creating a new Construction Designer Application quicker and easier.
 
 ## Technologies
 ### Chosen
@@ -27,8 +27,8 @@ Chrome (for now).
 # How to set up the project
 ## External tool installation
 ```
-git clone http://github.com/RoleModel/sayfa
-cd sayfa
+git clone http://github.com/RoleModel/ConD_New_App_Template
+cd ConD_New_App_Template
 nodenv install
 npm install
 ```
@@ -67,7 +67,7 @@ When finished with the feature and the code has been reviewed, the commits shoul
 * None yet
 
 # Links to:
-* [Git repo](http://github.com/RoleModel/sayfa)
+* [Git repo](http://github.com/RoleModel/ConD_New_App_Template)
 * [Task management system](https://trello.com/b/mwgnckUw)
 
 ## External services
@@ -76,8 +76,8 @@ When finished with the feature and the code has been reviewed, the commits shoul
 * [SendGrid](http://sendgrid.com/RoleModel)
 * [Heroku](http://herokuapp.com)
 
-## [CI](https://semaphoreci.com/rolemodel/sayfa)
-## [List of contributors](https://github.com/RoleModel/sayfa/graphs/contributors)
+## [CI](https://semaphoreci.com/rolemodel/ConD_New_App_Template)
+## [List of contributors](https://github.com/RoleModel/ConD_New_App_Template/graphs/contributors)
 
 # Deployment
 ## Strategy/process/commands

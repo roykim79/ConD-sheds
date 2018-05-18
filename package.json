@@ -1,7 +1,7 @@
 {
-  "name": "sayfa_server",
+  "name": "ConD_New_App_Template_server",
   "version": "0.1.0",
-  "description": "Server for Sayfa app",
+  "description": "Server for ConD_New_App_Template app",
   "main": "server.js",
   "scripts": {
     "preinstall": "cd client && npm install",
@@ -21,7 +21,7 @@
   "author": "RoleModel Software",
   "private": true,
   "dependencies": {
-    "construction-designer-core": "git+ssh://git@github.com/RoleModel/construction-designer-core.git#v1.6.1",
+    "construction-designer-core": "git+ssh://git@github.com/RoleModel/construction-designer-core.git#master",
     "express": "^4.16.3"
   },
   "devDependencies": {
