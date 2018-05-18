@@ -68,12 +68,8 @@ When finished with the feature and the code has been reviewed, the commits shoul
 
 # Links to:
 * [Git repo](http://github.com/RoleModel/ConD_New_App_Template)
-* [Task management system](https://trello.com/b/mwgnckUw)
 
 ## External services
-* [HoneyBadger](http://honeybadger.io)
-* [Skylight](http://skylight.io)
-* [SendGrid](http://sendgrid.com/RoleModel)
 * [Heroku](http://herokuapp.com)
 
 ## [CI](https://semaphoreci.com/rolemodel/ConD_New_App_Template)
