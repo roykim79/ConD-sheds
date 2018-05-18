@@ -1,5 +1,5 @@
 {
-  "name": "ConD_New_App_Template",
+  "name": "cond_new_app_template",
   "scripts": {},
   "env": {
     "CUSTOM_SSH_KEY": {
