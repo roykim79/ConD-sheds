@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "preinstall": "cd client && npm install",
-    "start:dev": "concurrently \"MONGODB_URI=mongodb://localhost/space_planner npm run server\" \"npm run client\"",
+    "start:dev": "concurrently \"npm run server\" \"npm run client\"",
     "start:prod": "NODE_ENV=production npm run server",
     "start": "if [ \"$NODE_ENV\" = \"production\" ]; then npm run start:prod; else npm run start:dev; fi",
     "server": "node server.js",
@@ -21,7 +21,7 @@
   "author": "RoleModel Software",
   "private": true,
   "dependencies": {
-    "construction-designer-core": "git+ssh://git@github.com/RoleModel/construction-designer-core.git#master",
+    "construction-designer-core": "git+ssh://git@github.com/RoleModel/construction-designer-core.git#tr_626_default_tools_refactor",
     "express": "^4.16.3"
   },
   "devDependencies": {
@@ -30,7 +30,7 @@
     "jasmine": "^3.1.0"
   },
   "engines": {
-    "node": "8.11.1",
+    "node": "8.11.2",
     "npm": "^6.0.1"
   }
 }
