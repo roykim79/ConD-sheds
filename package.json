@@ -21,7 +21,7 @@
   "author": "RoleModel Software",
   "private": true,
   "dependencies": {
-    "construction-designer-core": "git+ssh://git@github.com/RoleModel/construction-designer-core.git#tr_626_default_tools_refactor",
+    "construction-designer-core": "git+ssh://git@github.com/RoleModel/construction-designer-core.git#master",
     "express": "^4.16.3"
   },
   "devDependencies": {
@@ -30,7 +30,7 @@
     "jasmine": "^3.1.0"
   },
   "engines": {
-    "node": "8.11.2",
+    "node": "8.11.3",
     "npm": "^6.0.1"
   }
 }

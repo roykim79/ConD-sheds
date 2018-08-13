@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "construction-designer-core": "git+ssh://git@github.com/RoleModel/construction-designer-core.git#tr_626_default_tools_refactor",
+    "construction-designer-core": "git+ssh://git@github.com/RoleModel/construction-designer-core.git#master",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -25,7 +25,7 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "jest-enzyme": "^6.0.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.9.2",
     "sass-loader": "^7.0.1",
     "uglifyjs-webpack-plugin": "^1.2.5"
   }
