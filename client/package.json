@@ -12,6 +12,8 @@
     "source-map-loader": "^0.2.3"
   },
   "scripts": {
+    "set_link": "npm link ../../construction-designer-core",
+    "unset_link": "npm unlink ../../construction-designer-core",
     "start": "./start_dev.sh",
     "test": "CI=true react-scripts test --env=jsdom",
     "test_jest_debug": "CI=1 node debug node_modules/react-scripts/scripts/test.js --runInBand --env=jsdom",
