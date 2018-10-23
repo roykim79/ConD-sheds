@@ -175,7 +175,10 @@ module.exports = {
               babelrc: false,
               presets: [require.resolve('babel-preset-react-app')],
               plugins: [
-                'transform-es2015-modules-commonjs'
+                'transform-es2015-modules-commonjs',
+                ["transform-builtin-extend", {
+                        globals: ["Array"]
+                      }]
               ],
               // @remove-on-eject-end
               // This is a feature of `babel-loader` for webpack (not Babel itself).
