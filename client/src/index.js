@@ -1,3 +1,4 @@
+require('react-app-polyfill/ie11')
 const React = require('react');
 const ReactDOM = require('react-dom');
 require('./stylesheets/index.scss');

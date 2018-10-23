@@ -6,30 +6,36 @@
     "construction-designer-core": "git+ssh://git@github.com/RoleModel/construction-designer-core.git#v2.0.0",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
+    "react-app-polyfill": "^0.1.3",
     "react-dom": "^16.5.2",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
+    "react-scripts": "2.0.5",
     "source-map-loader": "^0.2.4"
   },
   "scripts": {
     "set_link": "npm link ../../construction-designer-core",
     "unset_link": "npm unlink ../../construction-designer-core",
     "start": "./start_dev.sh",
-    "test": "CI=true react-scripts test --env=jsdom",
-    "test_jest_debug": "CI=1 node debug node_modules/react-scripts/scripts/test.js --runInBand --env=jsdom",
-    "test_jest_watch": "react-scripts test --env=jsdom",
+    "test": "CI=true react-scripts test",
+    "test_jest_debug": "CI=1 node debug node_modules/react-scripts/scripts/test.js --runInBand",
+    "test_jest_watch": "react-scripts test",
     "postinstall": "if [ -z \"$npm_config_production\" ]; then cp ./createJestConfig.js node_modules/react-scripts/scripts/utils/; fi",
     "eject": "react-scripts eject",
     "build": "./create_build.sh"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-transform-builtin-extend": "^1.1.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.1.0",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.6.0",
     "jest-enzyme": "^7.0.0",
     "node-sass": "^4.9.4",
     "sass-loader": "^7.1.0",
     "uglifyjs-webpack-plugin": "^1.2.5"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie < 11",
+    "not op_mini all"
+  ]
 }
