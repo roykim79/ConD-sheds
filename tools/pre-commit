@@ -5,4 +5,4 @@
 # To install it, from the repo root, say `cp -i tools/pre-commit .git/hooks/`.
 
 ./tools/update_indexes.js
-git add server/index.js client/src/shared/index.js
+git add "**/index.js"
