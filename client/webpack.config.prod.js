@@ -160,9 +160,11 @@ module.exports = {
             // https://github.com/terser-js/terser/issues/120
             inline: 2,
             drop_debugger: true,
-            keep_fnames: true
+            keep_fnames: false
           },
-          mangle: false,
+          mangle: {
+            keep_fnames: /^[A-Z]/,
+          },
           output: {
             ecma: 5,
             comments: false,
@@ -170,6 +172,7 @@ module.exports = {
             // https://github.com/facebook/create-react-app/issues/2488
             ascii_only: true,
           },
+          keep_classnames: true
         },
         // Use multi-process parallel running to improve the build speed
         // Default number of concurrent runs: os.cpus().length - 1
