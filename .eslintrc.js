@@ -1,12 +1,12 @@
 module.exports = {
+  "root": true,
   "env": {
-    "browser": true,
     "commonjs": true,
     "node": true,
-    "jasmine": true,
     "es6": true
   },
   "extends": "eslint:recommended",
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -43,6 +43,7 @@ module.exports = {
       "warn",
       "property"
     ],
+    "eqeqeq": "warn",
     "generator-star-spacing": "warn",
     "id-blacklist": "warn",
     "id-match": "warn",
@@ -55,7 +56,6 @@ module.exports = {
     "no-array-constructor": "warn",
     "no-caller": "warn",
     "no-catch-shadow": "warn",
-    "no-confusing-arrow": "warn",
     "no-console": "off",
     "no-continue": "warn",
     "no-div-regex": "warn",
@@ -103,6 +103,7 @@ module.exports = {
     "no-spaced-func": "warn",
     "no-undef": "warn",
     "no-undef-init": "warn",
+    "no-unexpected-multiline": "warn",
     "no-unmodified-loop-condition": "warn",
     "no-unneeded-ternary": [
       "warn",
@@ -113,7 +114,10 @@ module.exports = {
     "no-unreachable": "warn",
     "no-unused-vars": [
       "warn",
-      { "argsIgnorePattern": "^_" }
+      {
+        "argsIgnorePattern": "^_", // Allow unused arguments starting with an underscore
+        "varsIgnorePattern": "^_" // Allow unused variables starting with an underscore
+      }
     ],
     "no-useless-call": "warn",
     "no-useless-concat": "warn",
@@ -127,6 +131,7 @@ module.exports = {
     "prefer-const": "warn",
     "prefer-template": "warn",
     "require-yield": "warn",
+    "semi": ["warn", "never"],
     "sort-imports": "warn",
     "template-curly-spacing": "warn",
     "wrap-regex": "warn",

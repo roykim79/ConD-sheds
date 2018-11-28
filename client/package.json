@@ -29,8 +29,7 @@
     "enzyme-adapter-react-16": "^1.6.0",
     "jest-enzyme": "^7.0.0",
     "node-sass": "^4.9.4",
-    "sass-loader": "^7.1.0",
-    "uglifyjs-webpack-plugin": "^1.2.5"
+    "sass-loader": "^7.1.0"
   },
   "browserslist": [
     ">0.2%",
