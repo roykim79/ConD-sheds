@@ -2,7 +2,7 @@ const React = require('react');
 
 const { DrawingEditor } = require('construction-designer-core/drawing-editor');
 const { DrawingCanvas } = require('construction-designer-core/drawing-editor-react');
-const { Rectangle } = require('construction-designer-core/geometry');
+const Shed = require('../shared/domain-models/Shed');
 
 class App extends React.Component {
   drawingEditor() {
@@ -20,7 +20,7 @@ class App extends React.Component {
 
     drawingEditor.projectRepository().reset();
 
-    const component = new Rectangle(0, 0, 100, 100).toPolygon();
+    const component = new Shed();
     drawingEditor.drawingController().addComponent(component);
 
     return drawingEditor;

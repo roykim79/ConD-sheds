@@ -1,6 +1,6 @@
 # Overview
 ## Name and aliases
-The project is named "ConD_New_App_Template".
+The project is named "ConD_Sheds".
 
 ## Purpose
 To exist as a Construction Designer Application template to make creating a new Construction Designer Application quicker and easier.
@@ -9,7 +9,7 @@ To exist as a Construction Designer Application template to make creating a new 
 # How to set up the project
 ## External tool installation
 ```
-git clone http://github.com/RoleModel/ConD_New_App_Template
+git clone http://github.com/RoleModel/ConD_Sheds
 cd ConD_New_App_Template
 nodenv install
 npm install

@@ -1,7 +1,7 @@
 {
-  "name": "ConD_New_App_Template_server",
+  "name": "ConD_Sheds_server",
   "version": "0.1.0",
-  "description": "Server for ConD_New_App_Template app",
+  "description": "Server for ConD_Sheds app",
   "main": "server.js",
   "scripts": {
     "preinstall": "cd client && npm install",
